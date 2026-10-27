@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" fill="none">
+  <!-- Símbolo / Isotipo (Esquerda) -->
+  <g transform="translate(4, 4)">
+    <rect width="52" height="52" rx="14" fill="#0D1B3D" stroke="#14235C" stroke-width="1.5"/>
+    <!-- Arco dinâmico do "G" e abertura fotográfica -->
+    <path d="M37 20 C34.5 16.5 31 15 26.5 15 C18 15 12 21 12 29 C12 37 18 43 26.5 43 C33.5 43 39 38 40.2 31 L28 31 L28 27 L44.5 27 C44.8 28.5 45 30 45 31.5 C45 41 37 47 26.5 47 C15.5 47 8 39 8 29 C8 19 15.5 11 26.5 11 C32 11 36.8 13.5 40.5 18 L37 20 Z" fill="#FFFFFF"/>
+    <!-- Foco / Obturador Interno -->
+    <circle cx="26.5" cy="29" r="4.5" fill="#14235C" stroke="#C8CEDA" stroke-width="1"/>
+    <circle cx="26.5" cy="29" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Tipografia Nominal / Wordmark (Direita) -->
+  <g transform="translate(68, 12)">
+    <!-- Nome Principal: Giovanna Gomes -->
+    <text x="0" y="20" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.02em">
+      GIOVANNA GOMES
+    </text>
+    
+    <!-- Subtítulo de Especialidade: Audiovisual -->
+    <text x="0" y="34" fill="#C8CEDA" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.22em">
+      AUDIOVISUAL • VÍDEO &amp; FOTO
+    </text>
+  </g>
+</svg>

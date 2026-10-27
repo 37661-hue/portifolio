@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none">
+  <!-- Fundo / Base Geométrica Cinematográfica -->
+  <rect x="4" y="4" width="72" height="72" rx="20" fill="#0D1B3D" stroke="#14235C" stroke-width="2"/>
+  
+  <!-- Lâminas do Diafragma e Monograma "G" Audiovisual -->
+  <!-- Arco externo do "G" integrado ao obturador fotográfico -->
+  <path d="M52 28 C48.5 23.5 43.5 21 38 21 C26.5 21 18 29.5 18 40 C18 50.5 26.5 59 38 59 C48 59 56 52 57.5 42.5 L40 42.5 L40 37 L63 37 C63.5 39 63.8 41 63.8 43 C63.8 56.5 52.5 65 38 65 C23 65 12 54 12 40 C12 26 23 15 38 15 C45.5 15 52 18.2 56.8 24.2 L52 28 Z" fill="#FFFFFF"/>
+  
+  <!-- Detalhe do Obturador / Enquadramento de Lente -->
+  <circle cx="38" cy="40" r="7" fill="#14235C" stroke="#C8CEDA" stroke-width="1.5"/>
+  <circle cx="38" cy="40" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Guias de Foco do Visor da Câmera (Quatro Cantos Sutis) -->
+  <path d="M22 26 L22 22 L26 22" stroke="#C8CEDA" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M54 22 L58 22 L58 26" stroke="#C8CEDA" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M22 54 L22 58 L26 58" stroke="#C8CEDA" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M58 54 L58 58 L54 58" stroke="#C8CEDA" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
