@@ -1481,11 +1481,18 @@ button {
   border-radius: var(--radius-md);
   padding: 1.1rem;
   transition: transform var(--transition-fast), border-color var(--transition-fast);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .contact-item:hover {
   transform: translateY(-2px);
   border-color: var(--color-border-active);
+}
+
+.contact-item:hover .contact-val {
+  opacity: 0.85;
 }
 
 .contact-icon-box {
@@ -1648,6 +1655,23 @@ button {
   background-color: rgba(153, 27, 27, 0.4);
   border-color: #ef4444;
   color: #fecaca;
+}
+
+.form-feedback.warning {
+  background-color: rgba(20, 35, 92, 0.9);
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.form-feedback a {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-weight: 700;
+  transition: opacity var(--transition-fast);
+}
+
+.form-feedback a:hover {
+  opacity: 0.85;
 }
 
 /* --------------------------------------------------------------------------

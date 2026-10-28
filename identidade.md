@@ -82,8 +82,8 @@ A composição tipográfica equilibra a personalidade futurista e geométrica no
 - **Slogan / Tagline**: `[INSERIR SLOGAN OU FRASE DE IMPACTO ESPECÍFICA DO AUDIOVISUAL]`
 - **Mini-biografia resumida**: `[INSERIR RESUMO BIOGRÁFICO DE 2 A 3 FRASES COM SUA TRAJETÓRIA NO AUDIOVISUAL]`
 - **Redes Sociais / Links de Contato**:
-  - E-mail: `[INSERIR E-MAIL DE CONTATO]`
-  - Instagram / Portfólio de Fotos: `[INSERIR LINK]`
-  - Vimeo / YouTube: `[INSERIR LINK]`
-  - LinkedIn: `[INSERIR LINK]`
+  - E-mail: `gomesgiovanna232@gmail.com` *(confirmado)*
+  - Instagram: `@_.gigomes` (https://www.instagram.com/_.gigomes/) *(confirmado)*
+  - WhatsApp: `(19) 99170-7064` (https://wa.me/5519991707064) *(confirmado)*
+  - *(LinkedIn, YouTube e Vimeo não são utilizados no portfólio)*
 

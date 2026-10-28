@@ -240,16 +240,55 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Sucesso na validação (Sem simular envio para servidor real)
-      formFeedback.className = 'form-feedback success is-visible';
-      formFeedback.innerHTML = `
-        <strong>✓ Mensagem validada com sucesso!</strong><br>
-        Obrigada pelo contato, <em>${nameValue}</em>. Os campos foram verificados no seu navegador. 
-        <small style="display:block; margin-top: 4px; color: #047857;">(Nota: Como este é um portfólio estático sem servidor conectado, este envio demonstra a validação local dos campos).</small>
-      `;
+      // 4. Identificação da Área de Interesse selecionada
+      const subjectSelect = document.getElementById('contact-subject');
+      const subjectText = subjectSelect && subjectSelect.options[subjectSelect.selectedIndex]
+        ? subjectSelect.options[subjectSelect.selectedIndex].text
+        : 'Outro assunto / Parceria';
 
-      // Limpa os campos do formulário após sucesso
-      contactForm.reset();
+      // 5. Montagem da Mensagem Organizada
+      const whatsappMessage = `Olá, Giovanna! Vim através do seu portfólio.
+
+*Nome:* ${nameValue}
+*E-mail:* ${emailValue}
+*Área de Interesse:* ${subjectText}
+
+*Mensagem:*
+${messageValue}`;
+
+      // 6. Construção do Link do WhatsApp com encodeURIComponent()
+      const whatsappUrl = `https://wa.me/5519991707064?text=${encodeURIComponent(whatsappMessage)}`;
+
+      // 7. Abertura da Janela do WhatsApp (não envia automaticamente; prepara o texto na conversa)
+      let whatsappWindow = null;
+      try {
+        whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      } catch (err) {
+        whatsappWindow = null;
+      }
+
+      // 8. Mensagem de Orientação Acessível
+      if (!whatsappWindow || whatsappWindow.closed || typeof whatsappWindow.closed === 'undefined') {
+        // Orientação acessível em caso de bloqueio de pop-up pelo navegador
+        formFeedback.className = 'form-feedback warning is-visible';
+        formFeedback.innerHTML = `
+          <strong>✓ Formulário validado com sucesso!</strong><br>
+          Se o WhatsApp não abriu automaticamente (bloqueio de pop-up do navegador), use o link de acesso direto:<br>
+          <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-top:8px;">
+            👉 Clique aqui para abrir a conversa no WhatsApp
+          </a>
+        `;
+      } else {
+        // Orientação quando a aba abrir com sucesso
+        formFeedback.className = 'form-feedback success is-visible';
+        formFeedback.innerHTML = `
+          <strong>✓ Conversa iniciada no WhatsApp!</strong><br>
+          Sua mensagem foi formatada e carregada no WhatsApp. Por favor, confira o texto na conversa e clique em <em>Enviar</em> para confirmar.<br>
+          <small style="display:block; margin-top:6px;">
+            O WhatsApp não abriu? <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer">Clique aqui para abrir diretamente</a>.
+          </small>
+        `;
+      }
     });
   }
 
